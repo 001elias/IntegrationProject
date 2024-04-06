@@ -1,0 +1,11 @@
+24/04/06
+
+Elias
+
+1.Done/Not Done
+- CI/CD setup
+- DB setup
+2.To Do
+- Db setup
+3. Help
+N/A
