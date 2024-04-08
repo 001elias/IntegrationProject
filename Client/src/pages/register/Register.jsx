@@ -1,9 +1,9 @@
 import React from 'react';
-import "./Register.css";
+import "./Register.scss";
 
 const Register = () => {
     return (
-        <div ClassName='register'>Register</div>
+        <div className='register'>Register</div>
     )
 }
 

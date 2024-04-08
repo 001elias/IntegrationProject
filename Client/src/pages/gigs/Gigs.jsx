@@ -1,9 +1,9 @@
 import React from 'react';
-import "./Gigs.css";
+import "./Gigs.scss";
 
 const Gigs = () => {
     return (
-        <div ClassName='gigs'>Gigs</div>
+        <div className='gigs'>Gigs</div>
     )
 }
 

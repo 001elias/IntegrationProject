@@ -1,9 +1,9 @@
 import React from 'react';
-import "./Message.css";
+import "./Message.scss";
 
 const Message = () => {
     return (
-        <div ClassName='message'>Message</div>
+        <div className='message'>Message</div>
     )
 }
 

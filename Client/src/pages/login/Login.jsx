@@ -1,9 +1,9 @@
 import React from 'react';
-import "./Login.css";
+import "./Login.scss";
 
 const Login = () => {
     return (
-        <div ClassName='login'>Login</div>
+        <div className='login'>Login</div>
     )
 }
 
