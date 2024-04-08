@@ -10,6 +10,13 @@ Elias
 3. Help
 N/A
 
+Claudiu
+
+1. Done
+Created Jira
+2. To do
+GitHub integration for Jira
+
 Elias
 24/04/07
 1.Done/Not Done
@@ -19,3 +26,8 @@ Elias
 - login/register
 3. Help
 N/A
+
+Claudiu
+7.04.24
+1.Done
+Released the Kraken (GitHub integration for Jira)
