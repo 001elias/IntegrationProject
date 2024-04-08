@@ -25,13 +25,6 @@ const Navbar  = () => {
         isSeller: true,
       };
 
-    useEffect(() => {
-        window.addEventListener("scroll", isActive);
-        return () => {
-            window.removeEventListener("scroll", isActive);
-        }
-    }, []);
-
     return (
     <div className={active || pathname !== "/" ? "navbar active" : "navbar"}>
       <div className="container">
