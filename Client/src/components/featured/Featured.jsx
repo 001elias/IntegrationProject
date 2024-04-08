@@ -24,9 +24,6 @@ function Featured() {
             <button>AI Services</button>
           </div>
         </div>
-        <div className="right">
-          <img src="./img/man.png" alt="" />
-        </div>
       </div>
     </div>
   );
