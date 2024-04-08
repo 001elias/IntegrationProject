@@ -9,3 +9,13 @@ Elias
 - Db setup
 3. Help
 N/A
+
+Elias
+24/04/07
+1.Done/Not Done
+- CI/CD setup
+- finished navbar,footer,featured
+2.To Do
+- login/register
+3. Help
+N/A
