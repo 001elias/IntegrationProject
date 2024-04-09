@@ -30,12 +30,11 @@ const Navbar  = () => {
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
-            <span className="brand">liverr</span>
+            <span className="brand">OfferMe</span>
           </Link>
-          <span className="dot">.</span>
         </div>
         <div className="links">
-          <span>Liverr Business</span>
+          <span>OfferMe Business</span>
           <span>Explore</span>
           <span>English</span>
           {!currentUser?.isSeller && <span>Become a Seller</span>}
