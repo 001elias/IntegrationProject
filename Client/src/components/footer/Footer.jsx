@@ -74,14 +74,14 @@ function Footer() {
           <div className="right">
 
             <div className="link">
-              <img src="/img/language.png" alt="" />
+              <img src="/src/img/language.png" alt="" />
               <span>English</span>
             </div>
             <div className="link">
-              <img src="/img/coin.png" alt="" />
-              <span>USD</span>
+              <img src="/src/img/coin.png" alt="" />
+              <span>CAD</span>
             </div>
-            <img src="/img/accessibility.png" alt="" />
+            <img src="/src/img/accessibility.png" alt="" />
           </div>
         </div>
       </div>
