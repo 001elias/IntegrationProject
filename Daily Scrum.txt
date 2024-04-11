@@ -46,3 +46,21 @@ Amine
 April 10th 2024
 To Do:
 - Work on the backend.
+
+Elias
+24/04/09
+1.Done/Not Done
+- finished navbar,footer,featured,home page
+2.To Do
+- login/register
+3. Help
+N/A
+
+Elias
+24/04/07
+1.Done/Not Done
+- register/login
+2.To Do
+-add a gig functionality
+3. Help
+N/A
