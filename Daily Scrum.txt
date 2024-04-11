@@ -31,3 +31,18 @@ Claudiu
 7.04.24
 1.Done
 Released the Kraken (GitHub integration for Jira)
+
+Amine
+April 8th 2024
+To Do:
+- Research and prepare the backend of the project.
+
+Amine
+April 9th 2024
+To Do:
+- Start working on the backend.
+
+Amine
+April 10th 2024
+To Do:
+- Work on the backend.
