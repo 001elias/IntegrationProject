@@ -57,10 +57,12 @@ Elias
 N/A
 
 Elias
-24/04/07
+24/04/011
 1.Done/Not Done
-- register/login
+- finished register/login
 2.To Do
+- manage img/file upload
+- display user info
 -add a gig functionality
 3. Help
 N/A
