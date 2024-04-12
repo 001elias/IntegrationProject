@@ -92,8 +92,8 @@
           cursor: pointer;
   
           &:hover {
-            background-color: #1dbf73;
-            border-color: #1dbf73;
+            background-color: #7f6fb8;
+            border-color: #7f6fb8;
           }
         }
       }
@@ -118,6 +118,10 @@
 
     .link{
         text-decoration: none;
-        color: black;
+        color: rgb(255, 255, 255);
+    }
+    .useroption{
+      text-decoration: none;
+      color: black;
     }
   }
