@@ -11,6 +11,8 @@ import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
+const port = process.env.PORT || 8800;
+
 const app = express();
 dotenv.config();
 mongoose.set("strictQuery", true);
@@ -23,7 +25,7 @@ const connect = async () => {
     console.log(error);
   }
 };
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors());
 app.use(express.json());
 app.use(cookieParser());
 
@@ -41,7 +43,14 @@ app.use((err, req, res, next) => {
 
   return res.status(errorStatus).send(errorMessage);
 });
-const port = process.env.PORT || 8800;
+
+// Middleware to serve static files from the 'build' directory
+app.use(express.static(path.join(__dirname, "../Client/dist")));
+
+// Handles any requests that don't match the ones above
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Client/dist", "index.html"));
+});
 
 app.listen(port, () => {
   connect();
