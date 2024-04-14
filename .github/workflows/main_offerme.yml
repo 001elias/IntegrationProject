@@ -62,3 +62,6 @@ jobs:
           slot-name: 'Production'
           package: .
           
+      - name: 'Start Node.js server'
+        run: |
+          az webapp restart --name offerme --resource-group offerme_group
