@@ -10,8 +10,8 @@ import reviewRoute from "./routes/review.route.js";
 import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -30,7 +30,10 @@ const connect = async () => {
     console.log(error);
   }
 };
-app.use(cors());
+
+app.use(cors()); // PROD
+//app.use(cors({ origin: "http://localhost:5173", credentials: true })); // DEV
+
 app.use(express.json());
 app.use(cookieParser());
 
@@ -51,7 +54,7 @@ app.use((err, req, res, next) => {
 
 // Middleware to serve static files from the 'build' directory
 //app.use(express.static(path.join(__dirname, "../Client/dist")));
-app.use(express.static(join(__dirname, '../Client/dist')));
+app.use(express.static(join(__dirname, "../Client/dist")));
 
 // Handles any requests that don't match the ones above
 app.get("*", (req, res) => {
