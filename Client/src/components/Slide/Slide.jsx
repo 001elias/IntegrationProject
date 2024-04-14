@@ -6,6 +6,7 @@ const Slide = ({ children, slidesToShow, arrowsScroll }) => {
   return (
     <div className="slide">
       <div className="container">
+        <h1 class="h1">Our Categories</h1>
         <Slider slidesToShow={slidesToShow} arrowsScroll={arrowsScroll}>
           {children}
         </Slider>

@@ -9,7 +9,7 @@
     z-index: 999;
     transition: 0.5s all ease;
   
-    &.active {
+    /* &.active {
       background-color: white;
       color: black;
   
@@ -18,7 +18,7 @@
         color: #7f6fb8 !important;
         border: 1px solid #7f6fb8 !important;
       }
-    }
+    } */
   
     .container {
       width: 1400px;
@@ -111,7 +111,7 @@
       padding: 10px 0px;
       display: flex;
       justify-content: space-between;
-      color: gray;
+      color: rgb(201, 201, 201);
       font-weight: 300;
       font-family: "Montserrat", sans-serif;
     }

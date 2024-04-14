@@ -8,12 +8,13 @@ import { cards, projects } from "../../data";
 const Home = () => {
     return (
         <div className='home'>
-           <Featured />
-           <Slide slidesToShow={5} arrowsScroll={5}>
+            <Slide slidesToShow={5} arrowsScroll={5}>
             {cards.map((card) => (
             <CatCard key={card.id} card={card} />
         ))}
       </Slide>
+           <Featured />
+           
         </div>
     )
 }

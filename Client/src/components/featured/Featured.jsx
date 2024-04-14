@@ -7,7 +7,7 @@ function Featured() {
       <div className="container">
         <div className="left">
           <h1>
-           Find any <span>freelance</span> service you need
+           Explore the <span>offerme</span> services
           </h1>
           <div className="search">
             <div className="searchInput">
@@ -15,13 +15,6 @@ function Featured() {
               <input type="text" placeholder='Try "Logo Designing"' />
             </div>
             <button>Search</button>
-          </div>
-          <div className="popular">
-            <span>Popular:</span>
-            <button>Web Design</button>
-            <button>WordPress</button>
-            <button>Logo Design</button>
-            <button>AI Services</button>
           </div>
         </div>
       </div>

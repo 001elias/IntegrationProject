@@ -15,20 +15,12 @@ function Footer() {
             <span>Music & Audio</span>
             <span>Programming & Tech</span>
             <span>Data</span>
-            <span>Business</span>
-            <span>Lifestyle</span>
-            <span>Photography</span>
-            <span>Sitemap</span>
           </div>
           <div className="item">
             <h2>About</h2>
             <span>Press & News</span>
-            <span>Partnerships</span>
             <span>Privacy Policy</span>
             <span>Terms of Service</span>
-            <span>Intellectual Property Claims</span>
-            <span>Investor Relations</span>
-            <span>Contact Sales</span>
           </div>
           <div className="item">
             <h2>Support</h2>
@@ -36,33 +28,6 @@ function Footer() {
             <span>Trust & Safety</span>
             <span>Selling on OfferMe</span>
             <span>Buying on OfferMe</span>
-          </div>
-          <div className="item">
-            <h2>Community</h2>
-            <span>Customer Success Stories</span>
-            <span>Community hub</span>
-            <span>Forum</span>
-            <span>Events</span>
-            <span>Blog</span>
-            <span>Influencers</span>
-            <span>Affiliates</span>
-            <span>Podcast</span>
-            <span>Invite a Friend</span>
-            <span>Become a Seller</span>
-            <span>Community Standards</span>
-          </div>
-          <div className="item">
-            <h2>More From OfferMe</h2>
-            <span>OfferMe Business</span>
-            <span>OfferMe Pro</span>
-            <span>OfferMe Logo Maker</span>
-            <span>OfferMe Guides</span>
-            <span>Get Inspired</span>
-            <span>OfferMe Select</span>
-            <span>ClearVoice</span>
-            <span>OfferMe Workspace</span>
-            <span>Learn</span>
-            <span>Working Not Working</span>
           </div>
         </div>
         <hr />

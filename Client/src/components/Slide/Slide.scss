@@ -2,7 +2,13 @@
     display: flex;
     justify-content: center;
     padding: 100px 0px;
+    background-color: rgb(115, 137, 209);
     
+    .h1{
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-weight: bold;
+    }
     .container {
       width: 1400px;
       position: relative;
@@ -13,16 +19,16 @@
     }
   
     .carousel-prev,
-    .carousel-next {
-      width: 50px;
-      height: 50px;
-      background-color: rgb(243, 243, 243);
+    /* .carousel-next {
+      width: 25px;
+      height: 25px;
+      background-color: rgb(122, 175, 211);
       border-radius: 50%;
       position: absolute;
       top: 0;
       bottom: 0;
       margin: auto;
-    }
+    } */
   
     .carousel-prev {
       left: -25px;

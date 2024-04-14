@@ -41,12 +41,8 @@ const Navbar  = () => {
             <Link className="link" to="/">
               <span className="brand">OfferMe</span>
             </Link>
-            <span className="dot">.</span>
           </div>
           <div className="links">
-            <span>OfferMe Business</span>
-            <span>Explore</span>
-            <span>English</span>
             {!currentUser?.isSeller && <span>Become a Seller</span>}
             {currentUser ? (
               <div className="user" onClick={() => setOpen(!open)}>
@@ -86,9 +82,9 @@ const Navbar  = () => {
             )}
           </div>
         </div>
-        {(active || pathname !== "/") && (
+      
           <>
-            <hr />
+
             <div className="menu">
               <Link className="link menuLink" to="/">
                 Graphics & Design
@@ -118,9 +114,8 @@ const Navbar  = () => {
                 Lifestyle
               </Link>
             </div>
-            <hr />
+
           </>
-        )}
       </div>
     );
 }
