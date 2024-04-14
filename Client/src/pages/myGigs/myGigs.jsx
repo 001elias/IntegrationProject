@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./nyGigs.scss";
+import "./myGigs.scss";
 
 function MyGigs() {
   const currentUser = {
