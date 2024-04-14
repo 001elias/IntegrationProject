@@ -10,7 +10,7 @@ import reviewRoute from "./routes/review.route.js";
 import authRoute from "./routes/auth.route.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-const path from "path";
+import path from "path";
 
 const port = process.env.PORT || 8800;
 
