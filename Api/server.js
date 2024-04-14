@@ -50,11 +50,12 @@ app.use((err, req, res, next) => {
 });
 
 // Middleware to serve static files from the 'build' directory
-app.use(express.static(path.join(__dirname, "../Client/dist")));
+//app.use(express.static(path.join(__dirname, "../Client/dist")));
+App.use(express.static(join(__dirname, '../Client/dist')));
 
 // Handles any requests that don't match the ones above
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../Client/dist", "index.html"));
+  res.sendFile(join(__dirname, "../Client/dist", "index.html"));
 });
 
 app.listen(port, () => {
