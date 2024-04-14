@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "./Gigs.scss";
+import "Gigs.scss";
 import { gigs } from "../../data";
 import GigCard from "../../components/gigCard/GigCard";
 
