@@ -31,8 +31,8 @@ const connect = async () => {
   }
 };
 
-//app.use(cors()); // PROD
-app.use(cors({ origin: "http://localhost:5173", credentials: true })); // DEV
+app.use(cors()); // PROD
+//app.use(cors({ origin: "http://localhost:5173", credentials: true })); // DEV
 
 app.use(express.json());
 app.use(cookieParser());
@@ -60,9 +60,9 @@ app.use(express.static(join(__dirname, "../Client/dist")));
 app.use("/src/img", express.static(join(__dirname, "../Client/src/img")));
 
 // Handles any requests that don't match the ones above
-/* app.get("*", (req, res) => {
+app.get("*", (req, res) => {
   res.sendFile(join(__dirname, "../Client/dist", "index.html"));
-}); */
+});
 
 app.listen(port, () => {
   connect();
