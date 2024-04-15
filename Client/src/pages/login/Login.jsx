@@ -15,32 +15,37 @@ function Login() {
     try {
       const res = await newRequest.post("/auth/login", { username, password });
       localStorage.setItem("currentUser", JSON.stringify(res.data));
-      navigate("/")
+      navigate("/");
     } catch (err) {
-      setError(err.response.data);
+      setError(err.response.data.message || "An error occurred"); // Better error handling
     }
   };
 
   return (
     <div className="login">
-      <form onSubmit={handleSubmit}>
-        <h1>Sign in</h1>
-        <label htmlFor="">Username</label>
+      <form onSubmit={handleSubmit} aria-label="Login Form">
+        <h1>Sign In</h1>
+        <label htmlFor="username">Username</label>
         <input
+          id="username"
           name="username"
           type="text"
-          placeholder="johndoe"
+          placeholder="Enter your username"
           onChange={(e) => setUsername(e.target.value)}
+          aria-label="Enter your username"
         />
 
-        <label htmlFor="">Password</label>
+        <label htmlFor="password">Password</label>
         <input
+          id="password"
           name="password"
           type="password"
+          placeholder="Enter your password"
           onChange={(e) => setPassword(e.target.value)}
+          aria-label="Enter your password"
         />
         <button type="submit">Login</button>
-        {error && error}
+        {error && <div className="error">{error}</div>}
       </form>
     </div>
   );

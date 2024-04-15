@@ -73,3 +73,10 @@ April 11th 2024
 -backend models and routes
 2.To Do:
 - Work on the frontend.
+
+Amine
+April 14th 2024
+1.Done:
+- started working on some frontend.
+2.To Do:
+- Improve the style of some frontend pages.
