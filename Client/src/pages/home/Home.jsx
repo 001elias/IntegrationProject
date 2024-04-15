@@ -18,22 +18,22 @@ const Home = () => {
                     <Link className="link menuLink" to="/gigs?cat=gamedev">
                         Game Development
                     </Link>
-                    <Link className="link menuLink" to="/">
+                    <Link className="link menuLink" to="/gigs?cat=design">
                         Interior Design
                     </Link> 
-                    <Link className="link menuLink" to="/">
+                    <Link className="link menuLink" to="/gigs?cat=ecommerce">
                      E-commerce
                     </Link>
                     <Link className="link menuLink" to="/gigs?cat=animation">
                         Animation & Cartoon
                     </Link>
-                    <Link className="link menuLink" to="/">
+                    <Link className="link menuLink" to="/gigs?cat=marketing">
                         Digital Marketing
                     </Link>
-                    <Link className="link menuLink" to="/">
+                    <Link className="link menuLink" to="/gigs?cat=music">
                         Music & Audio
                     </Link>
-                    <Link className="link menuLink" to="/">
+                    <Link className="link menuLink" to="/gigs?cat=social">
                         Social Media Marketing
                     </Link>
               </div>
