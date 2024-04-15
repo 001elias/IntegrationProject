@@ -12,6 +12,9 @@ const Home = () => {
             <Featured />
             <div className="pills">
                 <div className="container">
+                <Link className="link menuLink" to="/gigs">
+                        All
+                    </Link>
                     <Link className="link menuLink" to="/gigs?cat=gamedev">
                         Game Development
                     </Link>
