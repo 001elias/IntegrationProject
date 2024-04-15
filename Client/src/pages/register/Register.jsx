@@ -14,6 +14,7 @@ function Register() {
     country: "",
     isSeller: false,
     desc: "",
+    phone: ""
   });
 
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ function Register() {
       return { ...prev, isSeller: e.target.checked };
     });
   };
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -38,39 +40,53 @@ function Register() {
         ...user,
         img: url,
       });
-      navigate("/")
+      navigate("/");
     } catch (err) {
       console.log(err);
     }
   };
+
   return (
     <div className="register">
       <form onSubmit={handleSubmit}>
         <div className="left">
           <h1>Create a new account</h1>
-          <label htmlFor="">Username</label>
+          <label htmlFor="username">Username</label>
           <input
+            id="username"
             name="username"
             type="text"
-            placeholder="johndoe"
+            placeholder="Enter your username"
             onChange={handleChange}
           />
-          <label htmlFor="">Email</label>
+          <label htmlFor="email">Email</label>
           <input
+            id="email"
             name="email"
             type="email"
-            placeholder="email"
+            placeholder="Enter your email address"
             onChange={handleChange}
           />
-          <label htmlFor="">Password</label>
-          <input name="password" type="password" onChange={handleChange} />
-          <label htmlFor="">Profile Picture</label>
-          <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-          <label htmlFor="">Country</label>
+          <label htmlFor="password">Password</label>
           <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="Create a password"
+            onChange={handleChange}
+          />
+          <label htmlFor="profilePic">Profile Picture</label>
+          <input
+            id="profilePic"
+            type="file"
+            onChange={(e) => setFile(e.target.files[0])}
+          />
+          <label htmlFor="country">Country</label>
+          <input
+            id="country"
             name="country"
             type="text"
-            placeholder="Usa"
+            placeholder="Enter your country"
             onChange={handleChange}
           />
           <button type="submit">Register</button>
@@ -78,25 +94,29 @@ function Register() {
         <div className="right">
           <h1>I want to become a seller</h1>
           <div className="toggle">
-            <label htmlFor="">Activate the seller account</label>
+            <label htmlFor="isSeller">Activate the seller account</label>
             <label className="switch">
-              <input type="checkbox" onChange={handleSeller} />
+              <input
+                id="isSeller"
+                type="checkbox"
+                onChange={handleSeller}
+              />
               <span className="slider round"></span>
             </label>
           </div>
-          <label htmlFor="">Phone Number</label>
+          <label htmlFor="phone">Phone Number</label>
           <input
+            id="phone"
             name="phone"
             type="text"
-            placeholder="+1 234 567 89"
+            placeholder="Enter your phone number"
             onChange={handleChange}
           />
-          <label htmlFor="">Description</label>
+          <label htmlFor="desc">Description</label>
           <textarea
-            placeholder="A short description of yourself"
+            id="desc"
             name="desc"
-            id=""
-            cols="30"
+            placeholder="Introduce yourself briefly"
             rows="10"
             onChange={handleChange}
           ></textarea>

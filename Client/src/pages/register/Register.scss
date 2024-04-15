@@ -1,110 +1,113 @@
 .register {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #1679ab;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; // Ensure form is vertically centered in the viewport
 
-    form {
-      width: 960px;
-      padding: 100px 0px;
+  form {
+    width: 960px;
+    max-width: 95%; // Prevent overflow on smaller screens
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); // Subtle shadow for depth
+    border-radius: 8px; // Soften edges
+    display: flex;
+    gap: 50px; // Increase gap for better separation between sections
+
+    h1 {
+      color: #333; // Darker color for better readability
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .left,
+    .right {
+      flex: 1;
       display: flex;
-      gap: 120px;
-  
-      h1 {
-       
-        margin-bottom: 20px;
+      flex-direction: column;
+      gap: 20px; // Increase gap for consistency
+
+      label {
+        color: #666; // Lighten label color for less visual dominance
+        font-size: 16px;
       }
-  
-      .left,
-      .right {
-        flex: 1;
+
+      input,
+      textarea {
+        padding: 10px 15px; // Adjust padding for comfort
+        border: 2px solid #ccc; // Increase border thickness for visual clarity
+        border-radius: 4px; // Rounded corners
+        font-size: 16px; // Increase font size for readability
+      }
+
+      button {
+        padding: 15px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        background-color: #007BFF; // Switch to a more standard button color
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #0056b3; // Darken on hover for feedback
+        }
+      }
+
+      .toggle {
         display: flex;
-        flex-direction: column;
+        align-items: center;
         gap: 10px;
-        justify-content: space-between;
-  
-        label {
-        
-          font-size: 18px;
+
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 34px; // Adjusted for size
+          height: 20px; // Adjusted for size
         }
-  
-        input,
-        textarea {
-          padding: 20px;
-          border: 1px solid rgb(216, 214, 214);
+
+        .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
         }
-  
-        button {
-          border: none;
-          padding: 20px;
-          color: white;
-          font-weight: 500;
-          font-size: 18px;
-          background-color: #7f6fb8;
+
+        .slider {
+          position: absolute;
           cursor: pointer;
-          border-radius: 12px;
-        }
-  
-        .toggle {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-  
-          .switch {
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 24px;
-          }
-  
-          /* Hide default HTML checkbox */
-          .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-          }
-  
-          .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #555;
-            -webkit-transition: 0.4s;
-            transition: 0.4s;
-            border-radius: 24px;
-          }
-  
-          .slider:before {
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #ccc;
+          transition: 0.4s;
+          border-radius: 34px; // Ensure roundness matches height
+
+          &:before {
             position: absolute;
             content: "";
             height: 16px;
             width: 16px;
-            left: 4px;
-            bottom: 4px;
+            left: 2px;
+            bottom: 2px;
             background-color: white;
-            -webkit-transition: 0.4s;
             transition: 0.4s;
             border-radius: 50%;
           }
-  
-          input:checked + .slider {
-            background-color: #7f6fb8;
-          }
-  
-          input:focus + .slider {
-            box-shadow: 0 0 1px #7f6fb8;
-          }
-  
-          input:checked + .slider:before {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
-          }
+        }
+
+        input:checked + .slider {
+          background-color: #007BFF; // Match button color
+        }
+
+        input:focus + .slider {
+          box-shadow: 0 0 1px #007BFF;
+        }
+
+        input:checked + .slider:before {
+          transform: translateX(14px); // Adjusted for new size
         }
       }
     }
   }
+}
