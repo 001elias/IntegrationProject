@@ -1,8 +1,10 @@
 .login {
     display: flex;
     align-items: center;
-    justify-content: center;
-  
+    justify-content: center;   
+    background: #1679ab;
+    height: 100vh;
+
     form {
       width: 360px;
       padding: 100px 0px;
@@ -11,12 +13,12 @@
       gap: 20px;
   
       h1 {
-        color: gray;
+       
         margin-bottom: 20px;
       }
   
       label {
-        color: gray;
+       
         font-size: 18px;
       }
   
@@ -24,6 +26,7 @@
       textarea {
         padding: 20px;
         border: 1px solid rgb(216, 214, 214);
+        border-radius: 12px;
       }
   
       button {
@@ -34,6 +37,7 @@
         font-size: 18px;
         background-color: #7f6fb8;
         cursor: pointer;
+        border-radius: 12px;
       }
   
       span{

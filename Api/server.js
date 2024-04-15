@@ -57,12 +57,12 @@ app.use((err, req, res, next) => {
 app.use(express.static(join(__dirname, "../Client/dist")));
 
 // Serve static files from the src/img directory
-app.use('/src/img', express.static(join(__dirname, "../Client/src/img")));
+app.use("/src/img", express.static(join(__dirname, "../Client/src/img")));
 
 // Handles any requests that don't match the ones above
-app.get("*", (req, res) => {
+/* app.get("*", (req, res) => {
   res.sendFile(join(__dirname, "../Client/dist", "index.html"));
-});
+}); */
 
 app.listen(port, () => {
   connect();

@@ -16,19 +16,6 @@ function Footer() {
             <span>Programming & Tech</span>
             <span>Data</span>
           </div>
-          <div className="item">
-            <h2>About</h2>
-            <span>Press & News</span>
-            <span>Privacy Policy</span>
-            <span>Terms of Service</span>
-          </div>
-          <div className="item">
-            <h2>Support</h2>
-            <span>Help & Support</span>
-            <span>Trust & Safety</span>
-            <span>Selling on OfferMe</span>
-            <span>Buying on OfferMe</span>
-          </div>
         </div>
         <hr />
         <div className="bottom">
@@ -37,16 +24,10 @@ function Footer() {
             <span>© OfferMe International Ltd. 2023</span>
           </div>
           <div className="right">
-
-            <div className="link">
-              <img src="/src/img/language.png" alt="" />
-              <span>English</span>
-            </div>
             <div className="link">
               <img src="/src/img/coin.png" alt="" />
               <span>CAD</span>
             </div>
-            <img src="/src/img/accessibility.png" alt="" />
           </div>
         </div>
       </div>

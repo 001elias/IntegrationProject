@@ -1,6 +1,27 @@
 import React from "react";
 import "./Gig.scss";
 import { Slider } from "infinite-react-carousel/lib";
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
+// const responsive = {
+//   superLargeDesktop: {
+//     // the naming can be any, depends on you.
+//     breakpoint: { max: 4000, min: 3000 },
+//     items: 3
+//   },
+//   desktop: {
+//     breakpoint: { max: 3000, min: 1024 },
+//     items: 3
+//   },
+//   tablet: {
+//     breakpoint: { max: 1024, min: 464 },
+//     items: 3
+//   },
+//   mobile: {
+//     breakpoint: { max: 464, min: 0 },
+//     items: 3
+//   }
+// };
 
 function Gig() {
   return (
@@ -17,15 +38,14 @@ function Gig() {
             />
             <span>Anna Bell</span>
             <div className="stars">
-              <img src="/img/star.png" alt="" />
-              <img src="/img/star.png" alt="" />
-              <img src="/img/star.png" alt="" />
-              <img src="/img/star.png" alt="" />
-              <img src="/img/star.png" alt="" />
-              <span>5</span>
+              <img src="/src/img/star.png" alt="" />
+              <img src="/src/img/star.png" alt="" />
+              
+              <span>2</span>
             </div>
           </div>
           <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+         
             <img
               src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
               alt=""
