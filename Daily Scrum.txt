@@ -37,10 +37,20 @@ April 8th 2024
 To Do:
 - Research and prepare the backend of the project.
 
+Claudiu
+8.04.24
+To do:
+Research for the project
+
 Amine
 April 9th 2024
 To Do:
 - Start working on the backend.
+
+Claudiu
+9.04.24
+To do:
+Research on the project
 
 Amine
 April 10th 2024
@@ -55,6 +65,11 @@ Elias
 - login/register
 3. Help
 N/A
+
+Claudiu
+10.04.24
+Done:
+Research on the project
 
 Elias
 24/04/011
@@ -73,3 +88,23 @@ April 11th 2024
 -backend models and routes
 2.To Do:
 - Work on the frontend.
+
+Claudiu
+11.04.24
+To do:
+Work on the backend
+
+Claudiu
+12.04.24
+To do:
+As a seller, I want to be able to edit or delete my services
+
+Claudiu
+15.04.24
+To do:
+As a buyer, I want to be able to purchase a service
+
+Claudiu
+16.04.24
+To do:
+Research on code
