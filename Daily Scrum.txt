@@ -113,3 +113,8 @@ Amine
 April 17th 2024
 To Do:
 - Work on the Reviews
+
+Amine
+April 17th 2024
+To Do:
+- update some frontend.
