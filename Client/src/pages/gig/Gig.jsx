@@ -62,7 +62,7 @@ function Gig() {
                     {Array(Math.round(data.totalStars / data.starNumber))
                       .fill()
                       .map((item, i) => (
-                        <img src="/img/star.png" alt="" key={i} />
+                        <img src="/src/img/star.png" alt="" key={i} />
                       ))}
                     <span>{Math.round(data.totalStars / data.starNumber)}</span>
                   </div>
@@ -92,7 +92,7 @@ function Gig() {
                         {Array(Math.round(data.totalStars / data.starNumber))
                           .fill()
                           .map((item, i) => (
-                            <img src="/img/star.png" alt="" key={i} />
+                            <img src="/src/img/star.png" alt="" key={i} />
                           ))}
                         <span>
                           {Math.round(data.totalStars / data.starNumber)}
@@ -140,18 +140,18 @@ function Gig() {
             <p>{data.shortDesc}</p>
             <div className="details">
               <div className="item">
-                <img src="/img/clock.png" alt="" />
+                <img src="/src/img/clock.png" alt="" />
                 <span>{data.deliveryDate} Days Delivery</span>
               </div>
               <div className="item">
-                <img src="/img/recycle.png" alt="" />
+                <img src="/src/img/recycle.png" alt="" />
                 <span>{data.revisionNumber} Revisions</span>
               </div>
             </div>
             <div className="features">
               {data.features.map((feature) => (
                 <div className="item" key={feature}>
-                  <img src="/img/greencheck.png" alt="" />
+                  <img src="/src/img/greencheck.png" alt="" />
                   <span>{feature}</span>
                 </div>
               ))}
