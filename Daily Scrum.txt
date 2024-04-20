@@ -144,6 +144,11 @@ Elias
 To do:
 Research on how to implement stripe
 
+Claudiu
+18.04.24
+To do:
+Working on: As a buyer, I want to be able to purchase a service
+
 Elias
 19.04.24
 To do:
