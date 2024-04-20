@@ -153,3 +153,8 @@ Elias
 19.04.24
 To do:
 Start implementing stripe payment
+
+Claudiu
+19.04.24
+Done:
+As a buyer, I want to be able to purchase a service
