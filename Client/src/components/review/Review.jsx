@@ -37,16 +37,9 @@ const Review = ({ review }) => {
           .map((item, i) => (
             <img src="/src/img/star.png" alt="" key={i} />
           ))}
-        <span>{review.star}</span>
+        <span>{review.star} star(s)</span>
       </div>
       <p>{review.desc}</p>
-      <div className="helpful">
-        <span>Helpful?</span>
-        <img src="/src/img/like.png" alt="" />
-        <span>Yes</span>
-        <img src="/src/img/dislike.png" alt="" />
-        <span>No</span>
-      </div>
     </div>
   );
 };

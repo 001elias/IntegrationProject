@@ -137,9 +137,9 @@ To Do:
 Elias
 18.04.24
 To do:
-Finalize review system
+Research on how to implement stripe
 
-Amine
-April 19th 2024
-To Do:
-- improve some frontend.
+Elias
+19.04.24
+To do:
+Start implementing stripe payment
