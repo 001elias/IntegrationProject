@@ -104,17 +104,37 @@ Claudiu
 To do:
 As a buyer, I want to be able to purchase a service
 
+Elias
+15.04.24
+To do:
+Start the review system
+
 Claudiu
 16.04.24
 To do:
 Research on code
+
+Elias
+16.04.24
+To do:
+Work on some frontend
 
 Amine
 April 17th 2024
 To Do:
 - Work on the Reviews
 
+Elias
+17.04.24
+To do:
+Finalize review system
+
 Amine
 April 18th 2024
 To Do:
 - update some frontend.
+
+Elias
+18.04.24
+To do:
+Finalize review system
