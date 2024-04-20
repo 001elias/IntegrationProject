@@ -35,16 +35,16 @@ const Review = ({ review }) => {
         {Array(review.star)
           .fill()
           .map((item, i) => (
-            <img src="/img/star.png" alt="" key={i} />
+            <img src="/src/img/star.png" alt="" key={i} />
           ))}
         <span>{review.star}</span>
       </div>
       <p>{review.desc}</p>
       <div className="helpful">
         <span>Helpful?</span>
-        <img src="/img/like.png" alt="" />
+        <img src="/src/img/like.png" alt="" />
         <span>Yes</span>
-        <img src="/img/dislike.png" alt="" />
+        <img src="/src/img/dislike.png" alt="" />
         <span>No</span>
       </div>
     </div>
