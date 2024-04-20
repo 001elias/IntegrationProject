@@ -2,23 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1679AB;
+    background-color: rgb(87, 87, 255);
     color: white;
     position: sticky;
     top: 0;
     z-index: 999;
     transition: 0.5s all ease;
   
-    /* &.active {
-      background-color: white;
-      color: black;
+    // &.active {
+    //   background-color: white;
+    //   color: black;
   
-      button {
-        background-color: white !important;
-        color: #7f6fb8 !important;
-        border: 1px solid #7f6fb8 !important;
-      }
-    } */
+    //   button {
+    //     background-color: white !important;
+    //     color: #7f6fb8 !important;
+    //     border: 1px solid #7f6fb8 !important;
+    //   }
+    // } 
   
     .container {
       width: 99%;
@@ -91,7 +91,7 @@
           cursor: pointer;
   
           &:hover {
-            background-color: #7f6fb8;
+            background-color: #423b5c;
             border-color: #7f6fb8;
           }
         }
