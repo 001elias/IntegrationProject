@@ -129,6 +129,11 @@ Elias
 To do:
 Finalize review system
 
+Claudiu
+17.04.24
+Done:
+As a seller, I want to be able to edit or delete my services
+
 Amine
 April 18th 2024
 To Do:
