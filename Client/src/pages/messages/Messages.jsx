@@ -47,7 +47,6 @@ const Messages = () => {
               <th>{currentUser.isSeller ? "Buyer" : "Seller"}</th>
               <th>Last Message</th>
               <th>Date</th>
-              <th>Action</th>
             </tr>
             {data.map((c) => (
               <tr
