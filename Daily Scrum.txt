@@ -174,4 +174,7 @@ Elias
 To do:
 Work on file uploads in messages
 
-
+Amine
+April 22nd 2024
+To Do:
+- Improve the message page.
