@@ -17,6 +17,8 @@
       gap: 20px;
       height: 500px;
       overflow: scroll;
+      border: 3px solid #00000099;
+      border-radius: 5px;
 
       .item {
         display: flex;
@@ -46,9 +48,9 @@
         p {
           max-width: 500px;
           padding: 20px;
-          background-color: rgb(244, 241, 241);
+          background-color: rgb(146 183 157);
           border-radius: 0px 20px 20px 20px;
-          color: gray;
+          color: black;
           font-weight: 300;
         }
       }
@@ -69,19 +71,19 @@
         width: 80%;
         height: 100px;
         padding: 10px;
-        border: 1px solid lightgray;
+        border: 1px solid black;
         border-radius: 10px;
       }
 
       button{
-        background-color: #1dbf73;
+        background-color: #a08feb;
         padding: 20px;
-        color: white;
+        color: #00000096;
         font-weight: 500;
         border: none;
         border-radius: 10px;
         cursor: pointer;
-        width: 100px;
+        width: 150px;
       }
     }
   }

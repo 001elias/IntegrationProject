@@ -5,14 +5,15 @@
   min-height: 100vh; // Ensure form is vertically centered in the viewport
 
   form {
-    width: 960px;
-    max-width: 95%; // Prevent overflow on smaller screens
+    width: 1200px;
+    height: 700px;
+    max-width: 95%;
     padding: 40px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); // Subtle shadow for depth
-    border-radius: 8px; // Soften edges
+    background: rgba(104, 98, 183, 0.5803921569);
+    box-shadow: 0 4px 8px rgb(0 0 0);
+    border-radius: 8px;
     display: flex;
-    gap: 50px; // Increase gap for better separation between sections
+    gap: 50px;
 
     h1 {
       color: #333; // Darker color for better readability
@@ -28,15 +29,15 @@
       gap: 20px; // Increase gap for consistency
 
       label {
-        color: #666; // Lighten label color for less visual dominance
+        color: #000000db; // Lighten label color for less visual dominance
         font-size: 16px;
       }
 
       input,
       textarea {
         padding: 10px 15px; // Adjust padding for comfort
-        border: 2px solid #ccc; // Increase border thickness for visual clarity
-        border-radius: 4px; // Rounded corners
+        border: 2px solid #00000082;
+        border-radius: 15px;
         font-size: 16px; // Increase font size for readability
       }
 
@@ -45,7 +46,8 @@
         border: none;
         color: white;
         font-size: 16px;
-        background-color: #007BFF; // Switch to a more standard button color
+        background-color: #735e8f;
+    border-radius: 15px;
         cursor: pointer;
         transition: background-color 0.3s;
 
@@ -58,7 +60,6 @@
         display: flex;
         align-items: center;
         gap: 10px;
-
         .switch {
           position: relative;
           display: inline-block;

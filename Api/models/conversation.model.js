@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
+const { ObjectId } = Schema.Types;
 
 const ConversationSchema = new Schema(
   {
@@ -8,12 +9,14 @@ const ConversationSchema = new Schema(
       required: true,
       unique: true,
     },
-    sellerId: {
-      type: String,
+    seller: {
+      type: ObjectId,
+      ref: "User",
       required: true,
     },
-    buyerId: {
-      type: String,
+    buyer: {
+      type: ObjectId,
+      ref: "User",
       required: true,
     },
     readBySeller: {
