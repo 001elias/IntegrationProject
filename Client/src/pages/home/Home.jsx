@@ -1,47 +1,39 @@
 import React from 'react';
 import "./Home.scss";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Featured from '../../components/featured/Featured';
 import Slide from '../../components/Slide/Slide';
 import CatCard from "../../components/catCard/CatCard";
-import { cards, projects } from "../../data";
+import { cards } from "../../data";
 
 const Home = () => {
+    const categoryUrls = {
+        "All": "/gigs",
+        "Game Development": "/gigs?cat=gamedev",
+        "Interior Design": "/gigs?cat=design",
+        "E-commerce": "/gigs?cat=ecommerce",
+        "Animation & Cartoon": "/gigs?cat=animation",
+        "Digital Marketing": "/gigs?cat=marketing",
+        "Music & Audio": "/gigs?cat=music",
+        "Social Media Marketing": "/gigs?cat=social",
+    };
+
     return (
         <div className='home'> 
             <Featured />
             <div className="pills">
                 <div className="container">
-                <Link className="link menuLink" to="/gigs">
-                        All
-                    </Link>
-                    <Link className="link menuLink" to="/gigs?cat=gamedev">
-                        Game Development
-                    </Link>
-                    <Link className="link menuLink" to="/gigs?cat=design">
-                        Interior Design
-                    </Link> 
-                    <Link className="link menuLink" to="/gigs?cat=ecommerce">
-                     E-commerce
-                    </Link>
-                    <Link className="link menuLink" to="/gigs?cat=animation">
-                        Animation & Cartoon
-                    </Link>
-                    <Link className="link menuLink" to="/gigs?cat=marketing">
-                        Digital Marketing
-                    </Link>
-                    <Link className="link menuLink" to="/gigs?cat=music">
-                        Music & Audio
-                    </Link>
-                    <Link className="link menuLink" to="/gigs?cat=social">
-                        Social Media Marketing
-                    </Link>
-              </div>
+                    {Object.keys(categoryUrls).map((category) => (
+                        <Link className="link menuLink" to={categoryUrls[category]} key={category}>
+                            {category}
+                        </Link>
+                    ))}
+                </div>
             </div>
             <Slide slidesToShow={5} arrowsScroll={5}>
                 {cards.map((card) => (
-                    <CatCard key={card.id} card={card} />
-            ))}           
+                    <CatCard key={card.id} card={card} url={categoryUrls[card.title]} />
+                ))}
             </Slide>                     
         </div>
     )
