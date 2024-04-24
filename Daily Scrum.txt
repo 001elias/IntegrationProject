@@ -188,3 +188,8 @@ Amine
 April 23rd 2024
 To Do:
 - fix some links on the homepage.
+
+Claudiu
+22.04.24
+To do:
+working on the code
