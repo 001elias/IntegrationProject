@@ -13,6 +13,7 @@ import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/myGigs";
 import About from "./pages/about/About";
+import Tos from "./pages/tos/Tos";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import {
   QueryClient,
@@ -91,6 +92,10 @@ function App() {
         {
           path: "/about",
           element: <About />,
+        },
+        {
+          path: "/tos",
+          element: <Tos />,
         },
       ],
     },
