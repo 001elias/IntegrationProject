@@ -178,3 +178,8 @@ Amine
 April 22nd 2024
 To Do:
 - Improve the message page.
+
+Amine
+April 23rd 2024
+To Do:
+- fix some links on the homepage.
