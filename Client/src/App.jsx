@@ -12,6 +12,7 @@ import Orders from "./pages/orders/Orders";
 import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/myGigs";
+import About from "./pages/about/About";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import {
   QueryClient,
@@ -86,6 +87,10 @@ function App() {
         {
           path: "/success",
           element: <Success />,
+        },
+        {
+          path: "/about",
+          element: <About />,
         },
       ],
     },

@@ -27,7 +27,7 @@ function Footer() {
           </div>
           <div className="item">
             <h2>About</h2>
-            <span>About us</span>
+            <Link to="/about">About us</Link>
             <span>Terms of Service</span>
           </div>
           <div className="item">
