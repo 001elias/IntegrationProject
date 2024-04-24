@@ -1,20 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 function Footer() {
+  const categoryUrls = {
+    "Game Development": "/gigs?cat=gamedev",
+    "Interior Design": "/gigs?cat=design",
+    "E-commerce": "/gigs?cat=ecommerce",
+    "Animation & Cartoon": "/gigs?cat=animation",
+    "Digital Marketing": "/gigs?cat=marketing",
+    "Music & Audio": "/gigs?cat=music",
+    "Social Media Marketing": "/gigs?cat=social",
+  };
+
   return (
     <div className="footer">
       <div className="container">
         <div className="top">
           <div className="item">
             <h2>Categories</h2>
-            <span>Graphics & Design</span>
-            <span>Digital Marketing</span>
-            <span>Writing & Translation</span>
-            <span>Video & Animation</span>
-            <span>Music & Audio</span>
-            <span>Programming & Tech</span>
-            <span>Data</span>
+            {Object.keys(categoryUrls).map((category) => (
+              <Link to={categoryUrls[category]} key={category}>
+                <span>{category}</span>
+              </Link>
+            ))}
           </div>
         </div>
         <hr />

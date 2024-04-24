@@ -158,3 +158,28 @@ Claudiu
 19.04.24
 Done:
 As a buyer, I want to be able to purchase a service
+
+Elias
+20.04.24
+Done:
+Stripe implementation
+
+Elias
+21.04.24
+To do:
+Work on search queries
+
+Elias
+22.04.24
+To do:
+Work on file uploads in messages
+
+Amine
+April 22nd 2024
+To Do:
+- Improve the message page.
+
+Amine
+April 23rd 2024
+To Do:
+- fix some links on the homepage.
