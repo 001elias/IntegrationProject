@@ -37,6 +37,11 @@ April 8th 2024
 To Do:
 - Research and prepare the backend of the project.
 
+Ayman
+2024/04/08
+To Do
+Find Find Frontend Design
+
 Claudiu
 8.04.24
 To do:
@@ -56,6 +61,12 @@ Amine
 April 10th 2024
 To Do:
 - Work on the backend.
+
+Ayman
+2024/04/10
+To Do
+Start working on FrontEnd
+
 
 Elias
 24/04/09
@@ -99,6 +110,11 @@ Claudiu
 To do:
 As a seller, I want to be able to edit or delete my services
 
+Ayman
+2024-04-13
+To Do
+Finish the Frontend for login and register
+
 Claudiu
 15.04.24
 To do:
@@ -124,6 +140,11 @@ April 17th 2024
 To Do:
 - Work on the Reviews
 
+Ayman
+2024/04/17
+Find ideas to add to the project
+
+
 Elias
 17.04.24
 To do:
@@ -148,6 +169,10 @@ Claudiu
 18.04.24
 To do:
 Working on: As a buyer, I want to be able to purchase a service
+
+Ayman
+2024-04-18
+Helping Amine work on the backend
 
 Elias
 19.04.24
@@ -178,6 +203,10 @@ Amine
 April 22nd 2024
 To Do:
 - Improve the message page.
+
+Ayman
+2024-04-23
+Test and debug the message page.
 
 Claudiu
 22.04.24
