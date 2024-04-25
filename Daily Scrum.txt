@@ -238,6 +238,11 @@ April 24 2024
 To Do:
 - fix bugs.
 
+Claudiu
+22.04.24
+To do:
+working on the code
+
 Elias
 25.04.24
 To do:
@@ -247,3 +252,5 @@ Ayman
 2024/04/25
 To Do
 Help Elias finish admin
+
+
