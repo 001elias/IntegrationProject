@@ -208,6 +208,11 @@ Ayman
 2024-04-23
 Test and debug the message page.
 
+Elias
+23.04.24
+To do:
+toast notiffs
+
 Claudiu
 22.04.24
 To do:
@@ -223,7 +228,17 @@ Claudiu
 To do:
 working on the code
 
+Elias
+24.04.24
+To do:
+admin user
+
 Amine
 April 24 2024
 To Do:
 - fix bugs.
+
+Elias
+25.04.24
+To do:
+finish admin
