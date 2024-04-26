@@ -19,16 +19,18 @@ import {
 } from "@tanstack/react-query";
 import Pay from "./pages/pay/Pay";
 import Success from "./pages/success/Success";
+import AdminDashboard from "./pages/admindashboard/AdminDashboard";
 
 function App() {
   const queryClient = new QueryClient();
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const Layout = () => {
     return (
       <div className="app">
         <QueryClientProvider client={queryClient}>
         <Navbar />
-        <Outlet />
-        <Footer />
+        <Outlet />       
+        {!currentUser.isAdmin &&  <Footer />}
         </QueryClientProvider>
       </div>
     );
@@ -87,7 +89,12 @@ function App() {
           path: "/success",
           element: <Success />,
         },
+        {
+          path: "/AdminDashboard",
+          element: <AdminDashboard />,
+        },
       ],
+      
     },
   ]);
 

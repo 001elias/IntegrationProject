@@ -16,13 +16,14 @@ function Gigs() {
   // Parse the query string into an object
   const queryParams = new URLSearchParams(search);
   const category = queryParams.get("cat") || "";
-
+  const searchTerm = queryParams.get("search") || "";
+  
   const { isLoading, error, data, refetch } = useQuery({
     queryKey: ["gigs"],
     queryFn: () =>
       newRequest
         .get(
-          `/gigs?cat=${category}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
+          `/gigs?search=${searchTerm}&cat=${category}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
         )
         .then((res) => {
           return res.data;

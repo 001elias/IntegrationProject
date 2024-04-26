@@ -1,7 +1,8 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 const { Schema } = mongoose;
 
-const userSchema = new Schema({
+const userSchema = new Schema(
+  {
     username: {
       type: String,
       required: true,
@@ -34,10 +35,16 @@ const userSchema = new Schema({
     },
     isSeller: {
       type: Boolean,
-      default:false
+      default: false,
     },
-  },{
-    timestamps:true
-  });
-  
-  export default mongoose.model("User", userSchema)
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+export default mongoose.model("User", userSchema);

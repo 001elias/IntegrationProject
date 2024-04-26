@@ -12,11 +12,12 @@ export const register = async (req, res, next) => {
     });
 
     await newUser.save();
-    res.status(201).send("User has been created.");
+    res.status(201).json({ message: "User has been created." });
   } catch (err) {
     next(err);
   }
 };
+
 export const login = async (req, res, next) => {
   try {
     const user = await User.findOne({ username: req.body.username });
@@ -41,7 +42,7 @@ export const login = async (req, res, next) => {
         httpOnly: true,
       })
       .status(200)
-      .send(info);
+      .json(info);
   } catch (err) {
     next(err);
   }
@@ -54,5 +55,5 @@ export const logout = async (req, res) => {
       secure: true,
     })
     .status(200)
-    .send("User has been logged out.");
+    .json({ message: "User has been logged out." });
 };

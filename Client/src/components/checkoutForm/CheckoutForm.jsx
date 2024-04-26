@@ -20,7 +20,7 @@ const CheckoutForm = () => {
     }
 
     const clientSecret = new URLSearchParams(window.location.search).get(
-        import.meta.env.STRIPE_SECRET
+      import.meta.env.STRIPE_SECRET
     );
 
     if (!clientSecret) {
@@ -60,7 +60,8 @@ const CheckoutForm = () => {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "http://localhost:5173/success",
+        //return_url: "http://localhost:5173/success", // DEV
+        return_url: "/success", // PROD
       },
     });
 

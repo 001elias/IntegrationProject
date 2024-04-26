@@ -7,6 +7,7 @@ export const createMessage = async (req, res, next) => {
     conversationId: req.body.conversationId,
     userId: req.userId,
     desc: req.body.desc,
+    fileUrl: req.body.fileUrl,
   });
   try {
     const savedMessage = await newMessage.save();
@@ -27,6 +28,7 @@ export const createMessage = async (req, res, next) => {
     next(err);
   }
 };
+
 export const getMessages = async (req, res, next) => {
   try {
     const messages = await Message.find({ conversationId: req.params.id });

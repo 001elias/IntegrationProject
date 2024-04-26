@@ -3,6 +3,8 @@ import upload from "../../utils/upload";
 import "./Register.scss";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Register() {
   const [file, setFile] = useState(null);
@@ -16,7 +18,6 @@ function Register() {
     desc: "",
     phone: ""
   });
-
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -33,18 +34,21 @@ function Register() {
   
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const url = await upload(file);
     try {
       await newRequest.post("/auth/register", {
         ...user,
         img: url,
       });
-      navigate("/");
+      toast.success("Registration successful!");
+      setTimeout(() => {
+        navigate("/");
+      }, 1000); // Delay redirection by 1 second
     } catch (err) {
-      console.log(err);
+      toast.error(err.response.data.message || "An error occurred");
     }
   };
+  
 
   return (
     <div className="register">
@@ -122,6 +126,7 @@ function Register() {
           ></textarea>
         </div>
       </form>
+      <ToastContainer />
     </div>
   );
 }

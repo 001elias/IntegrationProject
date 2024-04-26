@@ -1,11 +1,13 @@
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import React from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import Review from "../review/Review";
 import "./Reviews.scss";
-const Reviews = ({ gigId }) => {
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-  const queryClient = useQueryClient()
+const Reviews = ({ gigId }) => {
+  const queryClient = useQueryClient();
   const { isLoading, error, data } = useQuery({
     queryKey: ["reviews"],
     queryFn: () =>
@@ -18,9 +20,19 @@ const Reviews = ({ gigId }) => {
     mutationFn: (review) => {
       return newRequest.post("/reviews", review);
     },
-    onSuccess:()=>{
-      queryClient.invalidateQueries(["reviews"])
-    }
+    onSuccess: () => {
+      toast.success("Review added successfully!");
+      queryClient.invalidateQueries(["reviews"]);
+    },
+    onError: (error) => {
+      //if the user is a seller and tries to post a review it shows an error
+      if (error.response.status === 403) {
+        toast.error("You cannot post a review as a seller");
+      } else
+      if (error.response.status === 404) {
+        toast.error(error.response.data.message || "You cannot post a review twice!");
+      }
+    },
   });
 
   const handleSubmit = (e) => {
@@ -33,11 +45,13 @@ const Reviews = ({ gigId }) => {
   return (
     <div className="reviews">
       <h2>Reviews</h2>
-      {isLoading
-        ? "loading"
-        : error
-        ? "Something went wrong!"
-        : data.map((review) => <Review key={review._id} review={review} />)}
+      {isLoading ? (
+        "loading"
+      ) : error ? (
+        "Something went wrong!"
+      ) : (
+        data.map((review) => <Review key={review._id} review={review} />)
+      )}
       <div className="add">
         <h3>Add a review</h3>
         <form action="" className="addForm" onSubmit={handleSubmit}>
@@ -49,9 +63,10 @@ const Reviews = ({ gigId }) => {
             <option value={4}>4</option>
             <option value={5}>5</option>
           </select>
-          <button>Send</button>
+          <button type="submit">Send</button>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };

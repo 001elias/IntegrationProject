@@ -5,6 +5,8 @@ import upload from "../../utils/upload";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Add = () => {
   const [singleFile, setSingleFile] = useState(undefined);
@@ -56,13 +58,19 @@ const Add = () => {
     },
     onSuccess: () => {
       queryClient.invalidateQueries(["myGigs"]);
+      toast.success("Gig created successfully!");
+      setTimeout(() => {
+        navigate("/gigs");
+      }, 1300); // Delay navigation by 2 seconds
+    },
+    onError: (error) => {
+      toast.error(error.response.data.message || "An error occurred");
     },
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
     mutation.mutate(state);
-    navigate("/gigs")
   };
 
   return (
@@ -166,6 +174,7 @@ const Add = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

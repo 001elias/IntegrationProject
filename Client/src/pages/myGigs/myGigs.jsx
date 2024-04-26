@@ -4,6 +4,8 @@ import "./myGigs.scss";
 import getCurrentUser from "../../utils/getCurrentUser";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function MyGigs() {
   const currentUser = getCurrentUser();
@@ -29,10 +31,12 @@ function MyGigs() {
 
   const handleDelete = (id) => {
     mutation.mutate(id);
+    toast.success('Gig deleted successfully');
   };
 
   return (
     <div className="myGigs">
+      <ToastContainer />
       {isLoading ? (
         "loading"
       ) : error ? (
