@@ -61,7 +61,7 @@ const CheckoutForm = () => {
       confirmParams: {
         // Make sure to change this to your payment completion page
         //return_url: "http://localhost:5173/success", // DEV
-        return_url: "/success", // PROD
+        return_url: "https://offerme-htvt.onrender.com/success", // PROD
       },
     });
 
