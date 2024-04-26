@@ -12,11 +12,10 @@ import Orders from "./pages/orders/Orders";
 import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import MyGigs from "./pages/myGigs/myGigs";
+import About from "./pages/about/About";
+import Tos from "./pages/tos/Tos";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import {
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Pay from "./pages/pay/Pay";
 import Success from "./pages/success/Success";
 import AdminDashboard from "./pages/admindashboard/AdminDashboard";
@@ -28,9 +27,9 @@ function App() {
     return (
       <div className="app">
         <QueryClientProvider client={queryClient}>
-        <Navbar />
-        <Outlet />       
-        {!currentUser.isAdmin &&  <Footer />}
+          <Navbar />
+          <Outlet />
+          {!currentUser.isAdmin && <Footer />}
         </QueryClientProvider>
       </div>
     );
@@ -93,17 +92,23 @@ function App() {
           path: "/AdminDashboard",
           element: <AdminDashboard />,
         },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/tos",
+          element: <Tos />,
+        },
       ],
-      
     },
   ]);
 
-  return(
+  return (
     <div>
-    <RouterProvider router={router} />;
+      <RouterProvider router={router} />;
     </div>
   );
 }
 
-
-export default App
+export default App;

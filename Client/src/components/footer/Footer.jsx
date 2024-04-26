@@ -25,6 +25,15 @@ function Footer() {
               </Link>
             ))}
           </div>
+          <div className="item">
+            <h2>About</h2>
+            <Link to="/about">About us</Link>
+            <Link to="/tos">Terms of Service</Link>
+          </div>
+          <div className="item">
+            <h2>Support</h2>
+            <span>Help & Support</span>
+          </div>
         </div>
         <hr />
         <div className="bottom">

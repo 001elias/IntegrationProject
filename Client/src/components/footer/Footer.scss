@@ -3,15 +3,12 @@
   justify-content: center;
   color: #666;
   margin: 50px 0px;
-  margin-top: -20px; //added to fix white space when changing bg color
-  margin-bottom: -20px; //added to fix white space when changing bg color
-  background-color: #e6dfff;
-  padding: 20px;
+  // margin-top: -20px; //added to fix white space when changing bg color
+  // margin-bottom: -20px; //added to fix white space when changing bg color
+  // background-color: #f2eeff;
+  // padding: 20px;
 
-  img {
-    width: 24px;
-    height: 24px;
-  }
+
 
   .container {
     width: 1400px;
@@ -39,6 +36,7 @@
           text-decoration: none; /* Remove underline */
           color: inherit; /* Inherit color */
           cursor: pointer; /* Change cursor to pointer on hover */
+          font-weight: 300; /* Ensure consistent font weight */
         }
       }
     }
