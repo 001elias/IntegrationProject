@@ -9,7 +9,7 @@
   z-index: 999;
   transition: 0.5s all ease;
 
-  &.active {
+  /*  &.active {
     background-color: white;
     color: black;
 
@@ -18,7 +18,7 @@
       color: #534aff !important;
       border: 1px solid #534aff !important;
     }
-  }
+  } */
 
   .container {
     width: 1400px;
@@ -72,7 +72,7 @@
           background-color: white;
           border-radius: 10px;
           z-index: 999;
-          border: 1px solid lightgrey;
+          border: 1px solid #aaa;
           display: flex;
           flex-direction: column;
           gap: 10px;

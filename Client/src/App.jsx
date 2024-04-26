@@ -29,7 +29,7 @@ function App() {
         <QueryClientProvider client={queryClient}>
           <Navbar />
           <Outlet />
-          {!currentUser.isAdmin && <Footer />}
+          {!currentUser?.isAdmin && <Footer />}
         </QueryClientProvider>
       </div>
     );

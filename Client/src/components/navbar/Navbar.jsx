@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
         <div className="links">
           {currentUser?.isAdmin && (
-            <Link to="/AdminDashboard" className="useroption">
+            <Link to="/AdminDashboard" className="link">
               Dashboard
             </Link>
           )}

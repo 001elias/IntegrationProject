@@ -33,7 +33,7 @@ function AdminDashboard() {
     mutation.mutate(id);
   };
 
-  if (currentUser.isAdmin === false) {
+  if (currentUser?.isAdmin === false) {
     return <h1>Unauthorized</h1>;
   } else {
     return (

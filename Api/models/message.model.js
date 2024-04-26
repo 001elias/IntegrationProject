@@ -7,8 +7,11 @@ const MessageSchema = new Schema(
       type: String,
       required: true,
     },
-    userId: {
-      type: String,
+    //userId: {
+    user: {
+      //type: String,
+      type: ObjectId,
+      ref: "User",
       required: true,
     },
     desc: {
